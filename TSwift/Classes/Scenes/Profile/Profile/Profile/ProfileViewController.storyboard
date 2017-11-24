@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="4Yq-Lw-Ztx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="a6K-S7-ZGW" customClass="ProfileViewController" customModule="SwiftWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2UT-CW-jI1"/>
+                        <viewControllerLayoutGuide type="bottom" id="lxm-hc-MSy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t04-oz-smc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3X-PV-KGH">
+                                <rect key="frame" x="142" y="318.5" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.63529411759999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tve-B2-19c"/>
+                                    <constraint firstAttribute="width" constant="90" id="tyq-2U-sOR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="登陆">
+                                    <color key="titleColor" red="0.86301908559999996" green="0.20372797819999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickLoginButton:" destination="a6K-S7-ZGW" eventType="touchUpInside" id="Oaq-jM-6Pl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-xO-NMz">
+                                <rect key="frame" x="269" y="318" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.63529411759999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="注销">
+                                    <color key="titleColor" red="0.86301908559999996" green="0.20372797819999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickLogoutButton:" destination="a6K-S7-ZGW" eventType="touchUpInside" id="qcR-qa-1zk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqC-hK-sF0">
+                                <rect key="frame" x="16" y="318" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.63529411759999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="0.86301908559999996" green="0.20372797819999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickRegisterButton:" destination="a6K-S7-ZGW" eventType="touchUpInside" id="9Q3-kq-Hwh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FHb-xO-NMz" firstAttribute="width" secondItem="RqC-hK-sF0" secondAttribute="width" id="8je-zd-AvY"/>
+                            <constraint firstAttribute="trailing" secondItem="FHb-xO-NMz" secondAttribute="trailing" constant="16" id="ACr-AG-PFr"/>
+                            <constraint firstItem="RqC-hK-sF0" firstAttribute="leading" secondItem="t04-oz-smc" secondAttribute="leading" constant="16" id="CoK-XN-qyz"/>
+                            <constraint firstItem="FHb-xO-NMz" firstAttribute="height" secondItem="RqC-hK-sF0" secondAttribute="height" id="F2m-Zb-8zT"/>
+                            <constraint firstItem="FHb-xO-NMz" firstAttribute="centerY" secondItem="t04-oz-smc" secondAttribute="centerY" id="JJS-lZ-Sdp"/>
+                            <constraint firstItem="A3X-PV-KGH" firstAttribute="width" secondItem="RqC-hK-sF0" secondAttribute="width" id="LH8-ZU-Q0x"/>
+                            <constraint firstItem="A3X-PV-KGH" firstAttribute="centerX" secondItem="t04-oz-smc" secondAttribute="centerX" id="XaL-eR-xsM"/>
+                            <constraint firstItem="A3X-PV-KGH" firstAttribute="height" secondItem="RqC-hK-sF0" secondAttribute="height" id="aTB-ae-fTb"/>
+                            <constraint firstItem="A3X-PV-KGH" firstAttribute="centerY" secondItem="t04-oz-smc" secondAttribute="centerY" id="b6i-1v-SEI"/>
+                            <constraint firstItem="RqC-hK-sF0" firstAttribute="centerY" secondItem="t04-oz-smc" secondAttribute="centerY" id="uxR-CF-aDG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24z-JP-AtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="-256"/>
+        </scene>
+    </scenes>
+</document>

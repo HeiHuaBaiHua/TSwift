@@ -1,0 +1,1470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7325B2401FC66B1400AA8210 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325B23F1FC66B1400AA8210 /* ErrorView.swift */; };
+		7325B2421FC66B2300AA8210 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7325B2411FC66B2300AA8210 /* ErrorView.xib */; };
+		7325B2441FC6705600AA8210 /* UIView+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325B2431FC6705600AA8210 /* UIView+ErrorView.swift */; };
+		7325B24B1FC6D36800AA8210 /* weibo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7325B24A1FC6D36800AA8210 /* weibo.plist */; };
+		7331A0741FC4013400423F61 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0731FC4013400423F61 /* NavigationViewController.swift */; };
+		7331A0761FC402CA00423F61 /* UIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0751FC402CA00423F61 /* UIBuilder.swift */; };
+		7331A0781FC4065A00423F61 /* WeiboDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0771FC4065A00423F61 /* WeiboDetailView.swift */; };
+		7331A07A1FC40A2100423F61 /* UI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7331A0791FC40A2000423F61 /* UI.xcassets */; };
+		7331A07C1FC410A400423F61 /* WeiboDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A07B1FC410A400423F61 /* WeiboDetailViewModel.swift */; };
+		7331A0811FC4112B00423F61 /* WeiboDetailRepostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0801FC4112B00423F61 /* WeiboDetailRepostsViewModel.swift */; };
+		7331A0831FC4114F00423F61 /* WeiboDetailRepostsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0821FC4114F00423F61 /* WeiboDetailRepostsCellViewModel.swift */; };
+		7331A0851FC4116100423F61 /* WeiboDetailLikesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0841FC4116100423F61 /* WeiboDetailLikesCellViewModel.swift */; };
+		7331A0871FC4117400423F61 /* WeiboDetailLikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0861FC4117400423F61 /* WeiboDetailLikesViewModel.swift */; };
+		7331A0891FC4118000423F61 /* WeiboDetailCommentsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0881FC4118000423F61 /* WeiboDetailCommentsCellViewModel.swift */; };
+		7331A08B1FC4118D00423F61 /* WeiboDetailCommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A08A1FC4118D00423F61 /* WeiboDetailCommentsViewModel.swift */; };
+		7331A08D1FC4171300423F61 /* WeiboComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A08C1FC4171300423F61 /* WeiboComment.swift */; };
+		7331A0921FC41F3400423F61 /* WeiboDetailBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0911FC41F3400423F61 /* WeiboDetailBinder.swift */; };
+		7331A0941FC4201300423F61 /* WeiboDetailRepostsBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0931FC4201300423F61 /* WeiboDetailRepostsBinder.swift */; };
+		7331A0961FC4203000423F61 /* WeiboDetailRepostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0951FC4203000423F61 /* WeiboDetailRepostsCell.swift */; };
+		7331A0981FC4204C00423F61 /* WeiboDetailCommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0971FC4204C00423F61 /* WeiboDetailCommentsCell.swift */; };
+		7331A09A1FC4206000423F61 /* WeiboDetailLikesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0991FC4206000423F61 /* WeiboDetailLikesCell.swift */; };
+		7331A09C1FC4206C00423F61 /* WeiboDetailLikesBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A09B1FC4206C00423F61 /* WeiboDetailLikesBinder.swift */; };
+		7331A09E1FC4207700423F61 /* WeiboDetailCommentsBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A09D1FC4207700423F61 /* WeiboDetailCommentsBinder.swift */; };
+		7331A0A11FC420D700423F61 /* WeiboDetailTableBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331A0A01FC420D700423F61 /* WeiboDetailTableBinder.swift */; };
+		7343B1EE1FC3C28400CEA04B /* WeiboDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343B1ED1FC3C28400CEA04B /* WeiboDetailViewController.swift */; };
+		7343B1F51FC3C4A900CEA04B /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343B1F41FC3C4A900CEA04B /* SegmentView.swift */; };
+		7343B1F71FC3C87100CEA04B /* SegmentBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343B1F61FC3C87100CEA04B /* SegmentBinder.swift */; };
+		7343B1F91FC3C8AE00CEA04B /* SegmentViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343B1F81FC3C8AE00CEA04B /* SegmentViewProtocol.swift */; };
+		73C2A4CA1FC2D69700029D01 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C2A4C91FC2D69700029D01 /* ListViewModel.swift */; };
+		73C2A4CD1FC2DB1700029D01 /* TargetRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C2A4CC1FC2DB1700029D01 /* TargetRoot.swift */; };
+		73C2A4CF1FC2DB6600029D01 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C2A4CE1FC2DB6600029D01 /* TempViewController.swift */; };
+		73C2A4D21FC2DD8A00029D01 /* Router+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C2A4D11FC2DD8A00029D01 /* Router+Root.swift */; };
+		73C828661FC273DF004DB9EF /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827DE1FC273DF004DB9EF /* DataExtension.swift */; };
+		73C828671FC273DF004DB9EF /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827DF1FC273DF004DB9EF /* DictionaryExtension.swift */; };
+		73C828681FC273DF004DB9EF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827E01FC273DF004DB9EF /* StringExtension.swift */; };
+		73C828691FC273DF004DB9EF /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827E11FC273DF004DB9EF /* UserDefaultsExtension.swift */; };
+		73C8286A1FC273DF004DB9EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73C827E31FC273DF004DB9EF /* Localizable.strings */; };
+		73C8286B1FC273DF004DB9EF /* PHAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827E51FC273DF004DB9EF /* PHAssetExtension.swift */; };
+		73C8286C1FC273DF004DB9EF /* PhotoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827E61FC273DF004DB9EF /* PhotoHeader.swift */; };
+		73C8286D1FC273DF004DB9EF /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827E71FC273DF004DB9EF /* PhotoManager.swift */; };
+		73C8286E1FC273DF004DB9EF /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827EB1FC273DF004DB9EF /* UIButtonExtension.swift */; };
+		73C8286F1FC273DF004DB9EF /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827EC1FC273DF004DB9EF /* UIExtension.swift */; };
+		73C828711FC273DF004DB9EF /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827EE1FC273DF004DB9EF /* UIScrollViewExtension.swift */; };
+		73C828721FC273DF004DB9EF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827EF1FC273DF004DB9EF /* UIViewControllerExtension.swift */; };
+		73C828751FC273DF004DB9EF /* ListBinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827F31FC273DF004DB9EF /* ListBinderProtocol.swift */; };
+		73C828771FC273DF004DB9EF /* ReactiveCocoaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827F71FC273DF004DB9EF /* ReactiveCocoaExtension.swift */; };
+		73C828781FC273DF004DB9EF /* YYText+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827F81FC273DF004DB9EF /* YYText+Reactive.swift */; };
+		73C828791FC273DF004DB9EF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827FB1FC273DF004DB9EF /* APIError.swift */; };
+		73C8287A1FC273DF004DB9EF /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827FC1FC273DF004DB9EF /* HTTPClient.swift */; };
+		73C8287B1FC273DF004DB9EF /* HTTPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827FD1FC273DF004DB9EF /* HTTPConfiguration.swift */; };
+		73C8287C1FC273DF004DB9EF /* HTTPRequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827FE1FC273DF004DB9EF /* HTTPRequestGenerator.swift */; };
+		73C8287D1FC273DF004DB9EF /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C827FF1FC273DF004DB9EF /* HTTPService.swift */; };
+		73C8287E1FC273DF004DB9EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828021FC273DF004DB9EF /* AppDelegate.swift */; };
+		73C8287F1FC273DF004DB9EF /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828051FC273DF004DB9EF /* ComposeViewController.swift */; };
+		73C828801FC273DF004DB9EF /* TargetCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828071FC273DF004DB9EF /* TargetCompose.swift */; };
+		73C828811FC273DF004DB9EF /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8280A1FC273DF004DB9EF /* MusicViewController.swift */; };
+		73C828821FC273DF004DB9EF /* TargetMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8280C1FC273DF004DB9EF /* TargetMusic.swift */; };
+		73C828831FC273DF004DB9EF /* WeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828121FC273DF004DB9EF /* WeiboCell.swift */; };
+		73C828841FC273DF004DB9EF /* WeiboCellContentBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828131FC273DF004DB9EF /* WeiboCellContentBinder.swift */; };
+		73C828851FC273DF004DB9EF /* WeiboCellInfoBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828141FC273DF004DB9EF /* WeiboCellInfoBinder.swift */; };
+		73C828861FC273DF004DB9EF /* WeiboListBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828151FC273DF004DB9EF /* WeiboListBinder.swift */; };
+		73C828871FC273DF004DB9EF /* WeiboListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828161FC273DF004DB9EF /* WeiboListViewController.swift */; };
+		73C828881FC273DF004DB9EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828181FC273DF004DB9EF /* User.swift */; };
+		73C828891FC273DF004DB9EF /* Weibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828191FC273DF004DB9EF /* Weibo.swift */; };
+		73C8288A1FC273DF004DB9EF /* WeiboCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8281B1FC273DF004DB9EF /* WeiboCellContentView.swift */; };
+		73C8288B1FC273DF004DB9EF /* WeiboCellInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8281C1FC273DF004DB9EF /* WeiboCellInfoView.swift */; };
+		73C8288C1FC273DF004DB9EF /* WeiboCellInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73C8281D1FC273DF004DB9EF /* WeiboCellInfoView.xib */; };
+		73C8288D1FC273DF004DB9EF /* WeiboCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828201FC273DF004DB9EF /* WeiboCellViewModel.swift */; };
+		73C8288E1FC273DF004DB9EF /* WeiboCellContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828211FC273DF004DB9EF /* WeiboCellContentViewModel.swift */; };
+		73C8288F1FC273DF004DB9EF /* WeiboCellInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828221FC273DF004DB9EF /* WeiboCellInfoViewModel.swift */; };
+		73C828901FC273DF004DB9EF /* WeiboListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828231FC273DF004DB9EF /* WeiboListViewModel.swift */; };
+		73C828911FC273DF004DB9EF /* TargetWeibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828251FC273DF004DB9EF /* TargetWeibo.swift */; };
+		73C828921FC273DF004DB9EF /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828281FC273DF004DB9EF /* MessageListViewController.swift */; };
+		73C828931FC273DF004DB9EF /* TargetChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8282A1FC273DF004DB9EF /* TargetChat.swift */; };
+		73C828941FC273DF004DB9EF /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C8282E1FC273DF004DB9EF /* LoginViewController.storyboard */; };
+		73C828951FC273DF004DB9EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8282F1FC273DF004DB9EF /* LoginViewController.swift */; };
+		73C828961FC273DF004DB9EF /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C828311FC273DF004DB9EF /* ProfileViewController.storyboard */; };
+		73C828971FC273DF004DB9EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828321FC273DF004DB9EF /* ProfileViewController.swift */; };
+		73C828981FC273DF004DB9EF /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C828341FC273DF004DB9EF /* RegisterViewController.storyboard */; };
+		73C828991FC273DF004DB9EF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828351FC273DF004DB9EF /* RegisterViewController.swift */; };
+		73C8289A1FC273DF004DB9EF /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828361FC273DF004DB9EF /* RegisterViewModel.swift */; };
+		73C8289B1FC273DF004DB9EF /* TargetProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828381FC273DF004DB9EF /* TargetProfile.swift */; };
+		73C8289C1FC273DF004DB9EF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8283B1FC273DF004DB9EF /* TabBarController.swift */; };
+		73C8289D1FC273DF004DB9EF /* HTTPAPIManager+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8283E1FC273DF004DB9EF /* HTTPAPIManager+Reactive.swift */; };
+		73C8289E1FC273DF004DB9EF /* HTTPAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8283F1FC273DF004DB9EF /* HTTPAPIManager.swift */; };
+		73C8289F1FC273DF004DB9EF /* SinaAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828401FC273DF004DB9EF /* SinaAPIManager.swift */; };
+		73C828A01FC273DF004DB9EF /* UserAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828411FC273DF004DB9EF /* UserAPIManager.swift */; };
+		73C828A11FC273DF004DB9EF /* WeiboAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828421FC273DF004DB9EF /* WeiboAPIManager.swift */; };
+		73C828A21FC273DF004DB9EF /* Router+Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828451FC273DF004DB9EF /* Router+Compose.swift */; };
+		73C828A31FC273DF004DB9EF /* Router+Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828471FC273DF004DB9EF /* Router+Music.swift */; };
+		73C828A41FC273DF004DB9EF /* Router+Weibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828491FC273DF004DB9EF /* Router+Weibo.swift */; };
+		73C828A51FC273DF004DB9EF /* Router+Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8284B1FC273DF004DB9EF /* Router+Chat.swift */; };
+		73C828A61FC273DF004DB9EF /* Router+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8284D1FC273DF004DB9EF /* Router+Profile.swift */; };
+		73C828A71FC273DF004DB9EF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8284E1FC273DF004DB9EF /* Router.swift */; };
+		73C828A81FC273DF004DB9EF /* Router+Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828501FC273DF004DB9EF /* Router+Web.swift */; };
+		73C828A91FC273DF004DB9EF /* TargetWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828521FC273DF004DB9EF /* TargetWeb.swift */; };
+		73C828AA1FC273DF004DB9EF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828531FC273DF004DB9EF /* WebViewController.swift */; };
+		73C828AB1FC273DF004DB9EF /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828541FC273DF004DB9EF /* WebViewModel.swift */; };
+		73C828AD1FC273DF004DB9EF /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C828591FC273DF004DB9EF /* Home.xcassets */; };
+		73C828AE1FC273DF004DB9EF /* TabBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C8285A1FC273DF004DB9EF /* TabBar.xcassets */; };
+		73C828AF1FC273DF004DB9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C8285C1FC273DF004DB9EF /* Assets.xcassets */; };
+		73C828B01FC273DF004DB9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C8285D1FC273DF004DB9EF /* LaunchScreen.storyboard */; };
+		73C828B11FC273DF004DB9EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C8285F1FC273DF004DB9EF /* Main.storyboard */; };
+		73C828B21FC273DF004DB9EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828611FC273DF004DB9EF /* ViewController.swift */; };
+		73C828B31FC273DF004DB9EF /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73C828621FC273DF004DB9EF /* LaunchScreen.strings */; };
+		73C828B41FC273DF004DB9EF /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73C828641FC273DF004DB9EF /* Main.strings */; };
+		73C828BB1FC278BA004DB9EF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73C828BA1FC278BA004DB9EF /* Info.plist */; };
+		73C828BD1FC281DC004DB9EF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828BC1FC281DC004DB9EF /* UIColorExtension.swift */; };
+		73C828BF1FC28381004DB9EF /* HHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828BE1FC28381004DB9EF /* HHTableView.swift */; };
+		73C828C21FC2A926004DB9EF /* DeinitLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C828C11FC2A926004DB9EF /* DeinitLogger.swift */; };
+		B9CAD5D3FD315D7B4229FC05 /* Pods_SwiftWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B0953C3FF74D6AD14A3454 /* Pods_SwiftWeibo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EB79B1AB1F5D6A5744604C2 /* Pods-SwiftWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftWeibo/Pods-SwiftWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		7325B23F1FC66B1400AA8210 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		7325B2411FC66B2300AA8210 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		7325B2431FC6705600AA8210 /* UIView+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ErrorView.swift"; sourceTree = "<group>"; };
+		7325B24A1FC6D36800AA8210 /* weibo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weibo.plist; sourceTree = "<group>"; };
+		7331A0731FC4013400423F61 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		7331A0751FC402CA00423F61 /* UIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBuilder.swift; sourceTree = "<group>"; };
+		7331A0771FC4065A00423F61 /* WeiboDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailView.swift; sourceTree = "<group>"; };
+		7331A0791FC40A2000423F61 /* UI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UI.xcassets; sourceTree = "<group>"; };
+		7331A07B1FC410A400423F61 /* WeiboDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailViewModel.swift; sourceTree = "<group>"; };
+		7331A0801FC4112B00423F61 /* WeiboDetailRepostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailRepostsViewModel.swift; sourceTree = "<group>"; };
+		7331A0821FC4114F00423F61 /* WeiboDetailRepostsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailRepostsCellViewModel.swift; sourceTree = "<group>"; };
+		7331A0841FC4116100423F61 /* WeiboDetailLikesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailLikesCellViewModel.swift; sourceTree = "<group>"; };
+		7331A0861FC4117400423F61 /* WeiboDetailLikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailLikesViewModel.swift; sourceTree = "<group>"; };
+		7331A0881FC4118000423F61 /* WeiboDetailCommentsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailCommentsCellViewModel.swift; sourceTree = "<group>"; };
+		7331A08A1FC4118D00423F61 /* WeiboDetailCommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailCommentsViewModel.swift; sourceTree = "<group>"; };
+		7331A08C1FC4171300423F61 /* WeiboComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboComment.swift; sourceTree = "<group>"; };
+		7331A0911FC41F3400423F61 /* WeiboDetailBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailBinder.swift; sourceTree = "<group>"; };
+		7331A0931FC4201300423F61 /* WeiboDetailRepostsBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailRepostsBinder.swift; sourceTree = "<group>"; };
+		7331A0951FC4203000423F61 /* WeiboDetailRepostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailRepostsCell.swift; sourceTree = "<group>"; };
+		7331A0971FC4204C00423F61 /* WeiboDetailCommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailCommentsCell.swift; sourceTree = "<group>"; };
+		7331A0991FC4206000423F61 /* WeiboDetailLikesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailLikesCell.swift; sourceTree = "<group>"; };
+		7331A09B1FC4206C00423F61 /* WeiboDetailLikesBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailLikesBinder.swift; sourceTree = "<group>"; };
+		7331A09D1FC4207700423F61 /* WeiboDetailCommentsBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailCommentsBinder.swift; sourceTree = "<group>"; };
+		7331A0A01FC420D700423F61 /* WeiboDetailTableBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailTableBinder.swift; sourceTree = "<group>"; };
+		7343B1ED1FC3C28400CEA04B /* WeiboDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailViewController.swift; sourceTree = "<group>"; };
+		7343B1F41FC3C4A900CEA04B /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		7343B1F61FC3C87100CEA04B /* SegmentBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentBinder.swift; sourceTree = "<group>"; };
+		7343B1F81FC3C8AE00CEA04B /* SegmentViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewProtocol.swift; sourceTree = "<group>"; };
+		73AB83F81ED597C7006C3DD8 /* TSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C2A4C91FC2D69700029D01 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		73C2A4CC1FC2DB1700029D01 /* TargetRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetRoot.swift; sourceTree = "<group>"; };
+		73C2A4CE1FC2DB6600029D01 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		73C2A4D11FC2DD8A00029D01 /* Router+Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Root.swift"; sourceTree = "<group>"; };
+		73C827DE1FC273DF004DB9EF /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		73C827DF1FC273DF004DB9EF /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		73C827E01FC273DF004DB9EF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		73C827E11FC273DF004DB9EF /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		73C827E41FC273DF004DB9EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		73C827E51FC273DF004DB9EF /* PHAssetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHAssetExtension.swift; sourceTree = "<group>"; };
+		73C827E61FC273DF004DB9EF /* PhotoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHeader.swift; sourceTree = "<group>"; };
+		73C827E71FC273DF004DB9EF /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		73C827E81FC273DF004DB9EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		73C827EB1FC273DF004DB9EF /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		73C827EC1FC273DF004DB9EF /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		73C827EE1FC273DF004DB9EF /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		73C827EF1FC273DF004DB9EF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		73C827F31FC273DF004DB9EF /* ListBinderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBinderProtocol.swift; sourceTree = "<group>"; };
+		73C827F71FC273DF004DB9EF /* ReactiveCocoaExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCocoaExtension.swift; sourceTree = "<group>"; };
+		73C827F81FC273DF004DB9EF /* YYText+Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYText+Reactive.swift"; sourceTree = "<group>"; };
+		73C827FB1FC273DF004DB9EF /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		73C827FC1FC273DF004DB9EF /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		73C827FD1FC273DF004DB9EF /* HTTPConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPConfiguration.swift; sourceTree = "<group>"; };
+		73C827FE1FC273DF004DB9EF /* HTTPRequestGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestGenerator.swift; sourceTree = "<group>"; };
+		73C827FF1FC273DF004DB9EF /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		73C828021FC273DF004DB9EF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73C828051FC273DF004DB9EF /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		73C828071FC273DF004DB9EF /* TargetCompose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetCompose.swift; sourceTree = "<group>"; };
+		73C8280A1FC273DF004DB9EF /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		73C8280C1FC273DF004DB9EF /* TargetMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetMusic.swift; sourceTree = "<group>"; };
+		73C828121FC273DF004DB9EF /* WeiboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCell.swift; sourceTree = "<group>"; };
+		73C828131FC273DF004DB9EF /* WeiboCellContentBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCellContentBinder.swift; sourceTree = "<group>"; };
+		73C828141FC273DF004DB9EF /* WeiboCellInfoBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCellInfoBinder.swift; sourceTree = "<group>"; };
+		73C828151FC273DF004DB9EF /* WeiboListBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboListBinder.swift; sourceTree = "<group>"; };
+		73C828161FC273DF004DB9EF /* WeiboListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboListViewController.swift; sourceTree = "<group>"; };
+		73C828181FC273DF004DB9EF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		73C828191FC273DF004DB9EF /* Weibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weibo.swift; sourceTree = "<group>"; };
+		73C8281B1FC273DF004DB9EF /* WeiboCellContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCellContentView.swift; sourceTree = "<group>"; };
+		73C8281C1FC273DF004DB9EF /* WeiboCellInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCellInfoView.swift; sourceTree = "<group>"; };
+		73C8281D1FC273DF004DB9EF /* WeiboCellInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboCellInfoView.xib; sourceTree = "<group>"; };
+		73C828201FC273DF004DB9EF /* WeiboCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCellViewModel.swift; sourceTree = "<group>"; };
+		73C828211FC273DF004DB9EF /* WeiboCellContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCellContentViewModel.swift; sourceTree = "<group>"; };
+		73C828221FC273DF004DB9EF /* WeiboCellInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCellInfoViewModel.swift; sourceTree = "<group>"; };
+		73C828231FC273DF004DB9EF /* WeiboListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboListViewModel.swift; sourceTree = "<group>"; };
+		73C828251FC273DF004DB9EF /* TargetWeibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetWeibo.swift; sourceTree = "<group>"; };
+		73C828281FC273DF004DB9EF /* MessageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		73C8282A1FC273DF004DB9EF /* TargetChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetChat.swift; sourceTree = "<group>"; };
+		73C8282E1FC273DF004DB9EF /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		73C8282F1FC273DF004DB9EF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		73C828311FC273DF004DB9EF /* ProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		73C828321FC273DF004DB9EF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		73C828341FC273DF004DB9EF /* RegisterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		73C828351FC273DF004DB9EF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		73C828361FC273DF004DB9EF /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		73C828381FC273DF004DB9EF /* TargetProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetProfile.swift; sourceTree = "<group>"; };
+		73C8283B1FC273DF004DB9EF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		73C8283E1FC273DF004DB9EF /* HTTPAPIManager+Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPAPIManager+Reactive.swift"; sourceTree = "<group>"; };
+		73C8283F1FC273DF004DB9EF /* HTTPAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPAPIManager.swift; sourceTree = "<group>"; };
+		73C828401FC273DF004DB9EF /* SinaAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinaAPIManager.swift; sourceTree = "<group>"; };
+		73C828411FC273DF004DB9EF /* UserAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPIManager.swift; sourceTree = "<group>"; };
+		73C828421FC273DF004DB9EF /* WeiboAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboAPIManager.swift; sourceTree = "<group>"; };
+		73C828451FC273DF004DB9EF /* Router+Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Compose.swift"; sourceTree = "<group>"; };
+		73C828471FC273DF004DB9EF /* Router+Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Music.swift"; sourceTree = "<group>"; };
+		73C828491FC273DF004DB9EF /* Router+Weibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Weibo.swift"; sourceTree = "<group>"; };
+		73C8284B1FC273DF004DB9EF /* Router+Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Chat.swift"; sourceTree = "<group>"; };
+		73C8284D1FC273DF004DB9EF /* Router+Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Profile.swift"; sourceTree = "<group>"; };
+		73C8284E1FC273DF004DB9EF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		73C828501FC273DF004DB9EF /* Router+Web.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Web.swift"; sourceTree = "<group>"; };
+		73C828521FC273DF004DB9EF /* TargetWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetWeb.swift; sourceTree = "<group>"; };
+		73C828531FC273DF004DB9EF /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		73C828541FC273DF004DB9EF /* WebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		73C828591FC273DF004DB9EF /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
+		73C8285A1FC273DF004DB9EF /* TabBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBar.xcassets; sourceTree = "<group>"; };
+		73C8285C1FC273DF004DB9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73C8285E1FC273DF004DB9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73C828601FC273DF004DB9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73C828611FC273DF004DB9EF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73C828631FC273DF004DB9EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		73C828651FC273DF004DB9EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		73C828BA1FC278BA004DB9EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TSwift/Info.plist; sourceTree = SOURCE_ROOT; };
+		73C828BC1FC281DC004DB9EF /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		73C828BE1FC28381004DB9EF /* HHTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTableView.swift; sourceTree = "<group>"; };
+		73C828C11FC2A926004DB9EF /* DeinitLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitLogger.swift; sourceTree = "<group>"; };
+		8BB4FB0FA34B28EDAC8FA605 /* Pods-SwiftWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftWeibo/Pods-SwiftWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		D0B0953C3FF74D6AD14A3454 /* Pods_SwiftWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73AB83F51ED597C7006C3DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CAD5D3FD315D7B4229FC05 /* Pods_SwiftWeibo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F4ECBF0D943E030955F6DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BB4FB0FA34B28EDAC8FA605 /* Pods-SwiftWeibo.debug.xcconfig */,
+				4EB79B1AB1F5D6A5744604C2 /* Pods-SwiftWeibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7325B23E1FC66AD800AA8210 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				7325B2431FC6705600AA8210 /* UIView+ErrorView.swift */,
+				7325B23F1FC66B1400AA8210 /* ErrorView.swift */,
+				7325B2411FC66B2300AA8210 /* ErrorView.xib */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		7325B2491FC6D36800AA8210 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				7325B24A1FC6D36800AA8210 /* weibo.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		7331A0711FC4010700423F61 /* SegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				7343B1F81FC3C8AE00CEA04B /* SegmentViewProtocol.swift */,
+				7343B1F61FC3C87100CEA04B /* SegmentBinder.swift */,
+				7343B1F41FC3C4A900CEA04B /* SegmentView.swift */,
+			);
+			path = SegmentView;
+			sourceTree = "<group>";
+		};
+		7331A0721FC4011300423F61 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0731FC4013400423F61 /* NavigationViewController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		7331A07D1FC410E200423F61 /* Reposts */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0801FC4112B00423F61 /* WeiboDetailRepostsViewModel.swift */,
+				7331A0821FC4114F00423F61 /* WeiboDetailRepostsCellViewModel.swift */,
+			);
+			path = Reposts;
+			sourceTree = "<group>";
+		};
+		7331A07E1FC410EA00423F61 /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0861FC4117400423F61 /* WeiboDetailLikesViewModel.swift */,
+				7331A0841FC4116100423F61 /* WeiboDetailLikesCellViewModel.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
+		7331A07F1FC410F100423F61 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				7331A08A1FC4118D00423F61 /* WeiboDetailCommentsViewModel.swift */,
+				7331A0881FC4118000423F61 /* WeiboDetailCommentsCellViewModel.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		7331A08E1FC41EB000423F61 /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				7331A09B1FC4206C00423F61 /* WeiboDetailLikesBinder.swift */,
+				7331A0991FC4206000423F61 /* WeiboDetailLikesCell.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
+		7331A08F1FC41EB900423F61 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				7331A09D1FC4207700423F61 /* WeiboDetailCommentsBinder.swift */,
+				7331A0971FC4204C00423F61 /* WeiboDetailCommentsCell.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		7331A0901FC41EBD00423F61 /* Reposts */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0931FC4201300423F61 /* WeiboDetailRepostsBinder.swift */,
+				7331A0951FC4203000423F61 /* WeiboDetailRepostsCell.swift */,
+			);
+			path = Reposts;
+			sourceTree = "<group>";
+		};
+		7331A09F1FC420C500423F61 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0A01FC420D700423F61 /* WeiboDetailTableBinder.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		7343B1EC1FC3C26C00CEA04B /* WeiboDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7343B1ED1FC3C28400CEA04B /* WeiboDetailViewController.swift */,
+				7343B1F11FC3C41A00CEA04B /* Binder */,
+				7343B1F01FC3C41600CEA04B /* View */,
+				7343B1EF1FC3C41000CEA04B /* ViewModel */,
+			);
+			path = WeiboDetail;
+			sourceTree = "<group>";
+		};
+		7343B1EF1FC3C41000CEA04B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7331A07B1FC410A400423F61 /* WeiboDetailViewModel.swift */,
+				7331A07D1FC410E200423F61 /* Reposts */,
+				7331A07F1FC410F100423F61 /* Comments */,
+				7331A07E1FC410EA00423F61 /* Likes */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7343B1F01FC3C41600CEA04B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0771FC4065A00423F61 /* WeiboDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7343B1F11FC3C41A00CEA04B /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0911FC41F3400423F61 /* WeiboDetailBinder.swift */,
+				7331A09F1FC420C500423F61 /* TableView */,
+				7331A0901FC41EBD00423F61 /* Reposts */,
+				7331A08F1FC41EB900423F61 /* Comments */,
+				7331A08E1FC41EB000423F61 /* Likes */,
+			);
+			path = Binder;
+			sourceTree = "<group>";
+		};
+		7343B1F21FC3C48D00CEA04B /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				7343B1F31FC3C49600CEA04B /* UI */,
+			);
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		7343B1F31FC3C49600CEA04B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0751FC402CA00423F61 /* UIBuilder.swift */,
+				7331A0721FC4011300423F61 /* NavigationController */,
+				7331A0711FC4010700423F61 /* SegmentView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		73AB83EF1ED597C7006C3DD8 = {
+			isa = PBXGroup;
+			children = (
+				73C827D81FC273DF004DB9EF /* TSwift */,
+				73AB83F91ED597C7006C3DD8 /* Products */,
+				09F4ECBF0D943E030955F6DD /* Pods */,
+				D69F4BD08EA79976895F1A2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		73AB83F91ED597C7006C3DD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73AB83F81ED597C7006C3DD8 /* TSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73C2A4CB1FC2DAFB00029D01 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				73C2A4CC1FC2DB1700029D01 /* TargetRoot.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		73C2A4D01FC2DD7700029D01 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				73C2A4D11FC2DD8A00029D01 /* Router+Root.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		73C827D81FC273DF004DB9EF /* TSwift */ = {
+			isa = PBXGroup;
+			children = (
+				73C827D91FC273DF004DB9EF /* Classes */,
+				73C828571FC273DF004DB9EF /* Resource */,
+				73C828551FC273DF004DB9EF /* Frameworks */,
+				73C8285B1FC273DF004DB9EF /* Supporting Files */,
+			);
+			path = TSwift;
+			sourceTree = "<group>";
+		};
+		73C827D91FC273DF004DB9EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				73C828001FC273DF004DB9EF /* Scenes */,
+				73C8283C1FC273DF004DB9EF /* SceneUtils */,
+				73C827F51FC273DF004DB9EF /* MyUtils */,
+				73C827DA1FC273DF004DB9EF /* MyFoundation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		73C827DA1FC273DF004DB9EF /* MyFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				73C827DB1FC273DF004DB9EF /* Cocoa */,
+			);
+			path = MyFoundation;
+			sourceTree = "<group>";
+		};
+		73C827DB1FC273DF004DB9EF /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				73C827DC1FC273DF004DB9EF /* Foundation */,
+			);
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		73C827DC1FC273DF004DB9EF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				73C827E91FC273DF004DB9EF /* UI */,
+				73C827DD1FC273DF004DB9EF /* Extension */,
+				73C828C01FC2A90E004DB9EF /* DeinitLogger */,
+				73C827E21FC273DF004DB9EF /* Photo */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		73C827DD1FC273DF004DB9EF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				73C827DE1FC273DF004DB9EF /* DataExtension.swift */,
+				73C827E01FC273DF004DB9EF /* StringExtension.swift */,
+				73C827DF1FC273DF004DB9EF /* DictionaryExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		73C827E21FC273DF004DB9EF /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				73C827E31FC273DF004DB9EF /* Localizable.strings */,
+				73C827E51FC273DF004DB9EF /* PHAssetExtension.swift */,
+				73C827E61FC273DF004DB9EF /* PhotoHeader.swift */,
+				73C827E71FC273DF004DB9EF /* PhotoManager.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		73C827E91FC273DF004DB9EF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				73C827EA1FC273DF004DB9EF /* Extension */,
+				73C828BE1FC28381004DB9EF /* HHTableView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		73C827EA1FC273DF004DB9EF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				73C827EC1FC273DF004DB9EF /* UIExtension.swift */,
+				73C828BC1FC281DC004DB9EF /* UIColorExtension.swift */,
+				73C827EB1FC273DF004DB9EF /* UIButtonExtension.swift */,
+				73C827EE1FC273DF004DB9EF /* UIScrollViewExtension.swift */,
+				73C827EF1FC273DF004DB9EF /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		73C827F51FC273DF004DB9EF /* MyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				7343B1F21FC3C48D00CEA04B /* Cocoa */,
+				73C827F91FC273DF004DB9EF /* Network */,
+				73C827F61FC273DF004DB9EF /* FrameworkExtension */,
+			);
+			path = MyUtils;
+			sourceTree = "<group>";
+		};
+		73C827F61FC273DF004DB9EF /* FrameworkExtension */ = {
+			isa = PBXGroup;
+			children = (
+				73C827F81FC273DF004DB9EF /* YYText+Reactive.swift */,
+				73C827F71FC273DF004DB9EF /* ReactiveCocoaExtension.swift */,
+			);
+			path = FrameworkExtension;
+			sourceTree = "<group>";
+		};
+		73C827F91FC273DF004DB9EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				73C827FB1FC273DF004DB9EF /* APIError.swift */,
+				73C827FA1FC273DF004DB9EF /* HTTP */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		73C827FA1FC273DF004DB9EF /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				73C827FC1FC273DF004DB9EF /* HTTPClient.swift */,
+				73C827FF1FC273DF004DB9EF /* HTTPService.swift */,
+				73C827FD1FC273DF004DB9EF /* HTTPConfiguration.swift */,
+				73C827FE1FC273DF004DB9EF /* HTTPRequestGenerator.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		73C828001FC273DF004DB9EF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				73C828011FC273DF004DB9EF /* AppDelegate */,
+				73C828391FC273DF004DB9EF /* Root */,
+				73C8280D1FC273DF004DB9EF /* Weibo */,
+				73C828081FC273DF004DB9EF /* Music */,
+				73C828031FC273DF004DB9EF /* Compose */,
+				73C828261FC273DF004DB9EF /* Chat */,
+				73C8282B1FC273DF004DB9EF /* Profile */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		73C828011FC273DF004DB9EF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				73C828021FC273DF004DB9EF /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		73C828031FC273DF004DB9EF /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				73C828061FC273DF004DB9EF /* Targets */,
+				73C828041FC273DF004DB9EF /* Compose */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		73C828041FC273DF004DB9EF /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				73C828051FC273DF004DB9EF /* ComposeViewController.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		73C828061FC273DF004DB9EF /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				73C828071FC273DF004DB9EF /* TargetCompose.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		73C828081FC273DF004DB9EF /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				73C8280B1FC273DF004DB9EF /* Targets */,
+				73C828091FC273DF004DB9EF /* MusicList */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		73C828091FC273DF004DB9EF /* MusicList */ = {
+			isa = PBXGroup;
+			children = (
+				73C8280A1FC273DF004DB9EF /* MusicViewController.swift */,
+			);
+			path = MusicList;
+			sourceTree = "<group>";
+		};
+		73C8280B1FC273DF004DB9EF /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				73C8280C1FC273DF004DB9EF /* TargetMusic.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		73C8280D1FC273DF004DB9EF /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				73C828241FC273DF004DB9EF /* Targets */,
+				73C828171FC273DF004DB9EF /* Model */,
+				73C8280E1FC273DF004DB9EF /* WeiboList */,
+				7343B1EC1FC3C26C00CEA04B /* WeiboDetail */,
+			);
+			path = Weibo;
+			sourceTree = "<group>";
+		};
+		73C8280E1FC273DF004DB9EF /* WeiboList */ = {
+			isa = PBXGroup;
+			children = (
+				73C828161FC273DF004DB9EF /* WeiboListViewController.swift */,
+				73C828101FC273DF004DB9EF /* Binder */,
+				73C8281A1FC273DF004DB9EF /* View */,
+				73C8281E1FC273DF004DB9EF /* ViewModel */,
+			);
+			path = WeiboList;
+			sourceTree = "<group>";
+		};
+		73C828101FC273DF004DB9EF /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+				73C828151FC273DF004DB9EF /* WeiboListBinder.swift */,
+				73C828111FC273DF004DB9EF /* Cell */,
+			);
+			path = Binder;
+			sourceTree = "<group>";
+		};
+		73C828111FC273DF004DB9EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				73C828121FC273DF004DB9EF /* WeiboCell.swift */,
+				73C828141FC273DF004DB9EF /* WeiboCellInfoBinder.swift */,
+				73C828131FC273DF004DB9EF /* WeiboCellContentBinder.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		73C828171FC273DF004DB9EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73C828181FC273DF004DB9EF /* User.swift */,
+				73C828191FC273DF004DB9EF /* Weibo.swift */,
+				7331A08C1FC4171300423F61 /* WeiboComment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73C8281A1FC273DF004DB9EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73C8281C1FC273DF004DB9EF /* WeiboCellInfoView.swift */,
+				73C8281D1FC273DF004DB9EF /* WeiboCellInfoView.xib */,
+				73C8281B1FC273DF004DB9EF /* WeiboCellContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73C8281E1FC273DF004DB9EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				73C828231FC273DF004DB9EF /* WeiboListViewModel.swift */,
+				73C8281F1FC273DF004DB9EF /* Cell */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		73C8281F1FC273DF004DB9EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				73C828201FC273DF004DB9EF /* WeiboCellViewModel.swift */,
+				73C828221FC273DF004DB9EF /* WeiboCellInfoViewModel.swift */,
+				73C828211FC273DF004DB9EF /* WeiboCellContentViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		73C828241FC273DF004DB9EF /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				73C828251FC273DF004DB9EF /* TargetWeibo.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		73C828261FC273DF004DB9EF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				73C828291FC273DF004DB9EF /* Targets */,
+				73C828271FC273DF004DB9EF /* MessageList */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		73C828271FC273DF004DB9EF /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				73C828281FC273DF004DB9EF /* MessageListViewController.swift */,
+			);
+			path = MessageList;
+			sourceTree = "<group>";
+		};
+		73C828291FC273DF004DB9EF /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				73C8282A1FC273DF004DB9EF /* TargetChat.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		73C8282B1FC273DF004DB9EF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				73C828371FC273DF004DB9EF /* Targets */,
+				73C8282C1FC273DF004DB9EF /* Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		73C8282C1FC273DF004DB9EF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				73C828301FC273DF004DB9EF /* Profile */,
+				73C8282D1FC273DF004DB9EF /* Login */,
+				73C828331FC273DF004DB9EF /* Register */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		73C8282D1FC273DF004DB9EF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				73C8282E1FC273DF004DB9EF /* LoginViewController.storyboard */,
+				73C8282F1FC273DF004DB9EF /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		73C828301FC273DF004DB9EF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				73C828311FC273DF004DB9EF /* ProfileViewController.storyboard */,
+				73C828321FC273DF004DB9EF /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		73C828331FC273DF004DB9EF /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				73C828341FC273DF004DB9EF /* RegisterViewController.storyboard */,
+				73C828351FC273DF004DB9EF /* RegisterViewController.swift */,
+				73C828361FC273DF004DB9EF /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		73C828371FC273DF004DB9EF /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				73C828381FC273DF004DB9EF /* TargetProfile.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		73C828391FC273DF004DB9EF /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				73C2A4CB1FC2DAFB00029D01 /* Targets */,
+				73C8283B1FC273DF004DB9EF /* TabBarController.swift */,
+				73C2A4CE1FC2DB6600029D01 /* TempViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		73C8283C1FC273DF004DB9EF /* SceneUtils */ = {
+			isa = PBXGroup;
+			children = (
+				73C828B51FC27771004DB9EF /* Cocoa */,
+				73C8283D1FC273DF004DB9EF /* APIManager */,
+				73C828431FC273DF004DB9EF /* Router */,
+				73C828511FC273DF004DB9EF /* Web */,
+			);
+			path = SceneUtils;
+			sourceTree = "<group>";
+		};
+		73C8283D1FC273DF004DB9EF /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				73C8283F1FC273DF004DB9EF /* HTTPAPIManager.swift */,
+				73C8283E1FC273DF004DB9EF /* HTTPAPIManager+Reactive.swift */,
+				73C828401FC273DF004DB9EF /* SinaAPIManager.swift */,
+				73C828411FC273DF004DB9EF /* UserAPIManager.swift */,
+				73C828421FC273DF004DB9EF /* WeiboAPIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		73C828431FC273DF004DB9EF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				73C8284E1FC273DF004DB9EF /* Router.swift */,
+				73C2A4D01FC2DD7700029D01 /* Root */,
+				73C828481FC273DF004DB9EF /* Weibo */,
+				73C8284A1FC273DF004DB9EF /* Chat */,
+				73C828441FC273DF004DB9EF /* Compose */,
+				73C828461FC273DF004DB9EF /* Music */,
+				73C8284C1FC273DF004DB9EF /* Profile */,
+				73C8284F1FC273DF004DB9EF /* Web */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		73C828441FC273DF004DB9EF /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				73C828451FC273DF004DB9EF /* Router+Compose.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		73C828461FC273DF004DB9EF /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				73C828471FC273DF004DB9EF /* Router+Music.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		73C828481FC273DF004DB9EF /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				73C828491FC273DF004DB9EF /* Router+Weibo.swift */,
+			);
+			path = Weibo;
+			sourceTree = "<group>";
+		};
+		73C8284A1FC273DF004DB9EF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				73C8284B1FC273DF004DB9EF /* Router+Chat.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		73C8284C1FC273DF004DB9EF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				73C8284D1FC273DF004DB9EF /* Router+Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		73C8284F1FC273DF004DB9EF /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				73C828501FC273DF004DB9EF /* Router+Web.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		73C828511FC273DF004DB9EF /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				73C828521FC273DF004DB9EF /* TargetWeb.swift */,
+				73C828531FC273DF004DB9EF /* WebViewController.swift */,
+				73C828541FC273DF004DB9EF /* WebViewModel.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		73C828551FC273DF004DB9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		73C828571FC273DF004DB9EF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7325B2491FC6D36800AA8210 /* Plist */,
+				73C828581FC273DF004DB9EF /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		73C828581FC273DF004DB9EF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7331A0791FC40A2000423F61 /* UI.xcassets */,
+				73C828591FC273DF004DB9EF /* Home.xcassets */,
+				73C8285A1FC273DF004DB9EF /* TabBar.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		73C8285B1FC273DF004DB9EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73C828BA1FC278BA004DB9EF /* Info.plist */,
+				73C8285C1FC273DF004DB9EF /* Assets.xcassets */,
+				73C8285D1FC273DF004DB9EF /* LaunchScreen.storyboard */,
+				73C8285F1FC273DF004DB9EF /* Main.storyboard */,
+				73C828611FC273DF004DB9EF /* ViewController.swift */,
+				73C828621FC273DF004DB9EF /* LaunchScreen.strings */,
+				73C828641FC273DF004DB9EF /* Main.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73C828B51FC27771004DB9EF /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				73C828B61FC277E0004DB9EF /* UI */,
+				73C828B71FC277E5004DB9EF /* Foundation */,
+			);
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		73C828B61FC277E0004DB9EF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				73C828B81FC27813004DB9EF /* Binder */,
+				73C828B91FC27867004DB9EF /* ListBinder */,
+				7325B23E1FC66AD800AA8210 /* ErrorView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		73C828B71FC277E5004DB9EF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				73C827E11FC273DF004DB9EF /* UserDefaultsExtension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		73C828B81FC27813004DB9EF /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Binder;
+			sourceTree = "<group>";
+		};
+		73C828B91FC27867004DB9EF /* ListBinder */ = {
+			isa = PBXGroup;
+			children = (
+				73C827F31FC273DF004DB9EF /* ListBinderProtocol.swift */,
+				73C2A4C91FC2D69700029D01 /* ListViewModel.swift */,
+			);
+			path = ListBinder;
+			sourceTree = "<group>";
+		};
+		73C828C01FC2A90E004DB9EF /* DeinitLogger */ = {
+			isa = PBXGroup;
+			children = (
+				73C828C11FC2A926004DB9EF /* DeinitLogger.swift */,
+			);
+			path = DeinitLogger;
+			sourceTree = "<group>";
+		};
+		D69F4BD08EA79976895F1A2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0953C3FF74D6AD14A3454 /* Pods_SwiftWeibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73AB83F71ED597C7006C3DD8 /* TSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73AB840A1ED597C7006C3DD8 /* Build configuration list for PBXNativeTarget "TSwift" */;
+			buildPhases = (
+				A4ABD1C0237057CFA13D486E /* [CP] Check Pods Manifest.lock */,
+				73AB83F41ED597C7006C3DD8 /* Sources */,
+				73AB83F51ED597C7006C3DD8 /* Frameworks */,
+				73AB83F61ED597C7006C3DD8 /* Resources */,
+				2D55981EC6D13DD29DFCB4D4 /* [CP] Embed Pods Frameworks */,
+				55D061D2201DD0390DF55586 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSwift;
+			productName = SwiftWeibo;
+			productReference = 73AB83F81ED597C7006C3DD8 /* TSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73AB83F01ED597C7006C3DD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = HeiHuaBaiHua;
+				TargetAttributes = {
+					73AB83F71ED597C7006C3DD8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z4Z57X9SHG;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 73AB83F31ED597C7006C3DD8 /* Build configuration list for PBXProject "TSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 73AB83EF1ED597C7006C3DD8;
+			productRefGroup = 73AB83F91ED597C7006C3DD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73AB83F71ED597C7006C3DD8 /* TSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73AB83F61ED597C7006C3DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C828941FC273DF004DB9EF /* LoginViewController.storyboard in Resources */,
+				73C8286A1FC273DF004DB9EF /* Localizable.strings in Resources */,
+				73C828B01FC273DF004DB9EF /* LaunchScreen.storyboard in Resources */,
+				73C828981FC273DF004DB9EF /* RegisterViewController.storyboard in Resources */,
+				73C828B11FC273DF004DB9EF /* Main.storyboard in Resources */,
+				73C828AD1FC273DF004DB9EF /* Home.xcassets in Resources */,
+				73C828B31FC273DF004DB9EF /* LaunchScreen.strings in Resources */,
+				73C828961FC273DF004DB9EF /* ProfileViewController.storyboard in Resources */,
+				73C8288C1FC273DF004DB9EF /* WeiboCellInfoView.xib in Resources */,
+				7325B2421FC66B2300AA8210 /* ErrorView.xib in Resources */,
+				7331A07A1FC40A2100423F61 /* UI.xcassets in Resources */,
+				7325B24B1FC6D36800AA8210 /* weibo.plist in Resources */,
+				73C828B41FC273DF004DB9EF /* Main.strings in Resources */,
+				73C828AF1FC273DF004DB9EF /* Assets.xcassets in Resources */,
+				73C828AE1FC273DF004DB9EF /* TabBar.xcassets in Resources */,
+				73C828BB1FC278BA004DB9EF /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D55981EC6D13DD29DFCB4D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftWeibo/Pods-SwiftWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55D061D2201DD0390DF55586 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftWeibo/Pods-SwiftWeibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4ABD1C0237057CFA13D486E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73AB83F41ED597C7006C3DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C8289E1FC273DF004DB9EF /* HTTPAPIManager.swift in Sources */,
+				73C8287E1FC273DF004DB9EF /* AppDelegate.swift in Sources */,
+				7331A0741FC4013400423F61 /* NavigationViewController.swift in Sources */,
+				7331A0781FC4065A00423F61 /* WeiboDetailView.swift in Sources */,
+				7331A0871FC4117400423F61 /* WeiboDetailLikesViewModel.swift in Sources */,
+				73C828771FC273DF004DB9EF /* ReactiveCocoaExtension.swift in Sources */,
+				73C828A61FC273DF004DB9EF /* Router+Profile.swift in Sources */,
+				7325B2401FC66B1400AA8210 /* ErrorView.swift in Sources */,
+				7331A08B1FC4118D00423F61 /* WeiboDetailCommentsViewModel.swift in Sources */,
+				73C828A11FC273DF004DB9EF /* WeiboAPIManager.swift in Sources */,
+				73C2A4CD1FC2DB1700029D01 /* TargetRoot.swift in Sources */,
+				73C828661FC273DF004DB9EF /* DataExtension.swift in Sources */,
+				7331A0A11FC420D700423F61 /* WeiboDetailTableBinder.swift in Sources */,
+				73C8287C1FC273DF004DB9EF /* HTTPRequestGenerator.swift in Sources */,
+				7331A09E1FC4207700423F61 /* WeiboDetailCommentsBinder.swift in Sources */,
+				73C8286E1FC273DF004DB9EF /* UIButtonExtension.swift in Sources */,
+				7343B1F51FC3C4A900CEA04B /* SegmentView.swift in Sources */,
+				73C828BD1FC281DC004DB9EF /* UIColorExtension.swift in Sources */,
+				73C8286C1FC273DF004DB9EF /* PhotoHeader.swift in Sources */,
+				73C828861FC273DF004DB9EF /* WeiboListBinder.swift in Sources */,
+				73C8287A1FC273DF004DB9EF /* HTTPClient.swift in Sources */,
+				73C828AB1FC273DF004DB9EF /* WebViewModel.swift in Sources */,
+				73C828801FC273DF004DB9EF /* TargetCompose.swift in Sources */,
+				73C828AA1FC273DF004DB9EF /* WebViewController.swift in Sources */,
+				73C828711FC273DF004DB9EF /* UIScrollViewExtension.swift in Sources */,
+				73C828911FC273DF004DB9EF /* TargetWeibo.swift in Sources */,
+				73C828C21FC2A926004DB9EF /* DeinitLogger.swift in Sources */,
+				7331A0891FC4118000423F61 /* WeiboDetailCommentsCellViewModel.swift in Sources */,
+				73C8288A1FC273DF004DB9EF /* WeiboCellContentView.swift in Sources */,
+				73C8287D1FC273DF004DB9EF /* HTTPService.swift in Sources */,
+				73C8288B1FC273DF004DB9EF /* WeiboCellInfoView.swift in Sources */,
+				7343B1F91FC3C8AE00CEA04B /* SegmentViewProtocol.swift in Sources */,
+				73C2A4CF1FC2DB6600029D01 /* TempViewController.swift in Sources */,
+				73C8288E1FC273DF004DB9EF /* WeiboCellContentViewModel.swift in Sources */,
+				73C828951FC273DF004DB9EF /* LoginViewController.swift in Sources */,
+				7343B1EE1FC3C28400CEA04B /* WeiboDetailViewController.swift in Sources */,
+				73C828A41FC273DF004DB9EF /* Router+Weibo.swift in Sources */,
+				73C8289A1FC273DF004DB9EF /* RegisterViewModel.swift in Sources */,
+				73C828791FC273DF004DB9EF /* APIError.swift in Sources */,
+				73C828A71FC273DF004DB9EF /* Router.swift in Sources */,
+				73C8286D1FC273DF004DB9EF /* PhotoManager.swift in Sources */,
+				73C828A81FC273DF004DB9EF /* Router+Web.swift in Sources */,
+				73C828A51FC273DF004DB9EF /* Router+Chat.swift in Sources */,
+				73C828901FC273DF004DB9EF /* WeiboListViewModel.swift in Sources */,
+				7331A09A1FC4206000423F61 /* WeiboDetailLikesCell.swift in Sources */,
+				73C828A21FC273DF004DB9EF /* Router+Compose.swift in Sources */,
+				73C8286F1FC273DF004DB9EF /* UIExtension.swift in Sources */,
+				73C2A4D21FC2DD8A00029D01 /* Router+Root.swift in Sources */,
+				73C828841FC273DF004DB9EF /* WeiboCellContentBinder.swift in Sources */,
+				7343B1F71FC3C87100CEA04B /* SegmentBinder.swift in Sources */,
+				73C828831FC273DF004DB9EF /* WeiboCell.swift in Sources */,
+				73C8289F1FC273DF004DB9EF /* SinaAPIManager.swift in Sources */,
+				7331A0811FC4112B00423F61 /* WeiboDetailRepostsViewModel.swift in Sources */,
+				7331A0941FC4201300423F61 /* WeiboDetailRepostsBinder.swift in Sources */,
+				73C2A4CA1FC2D69700029D01 /* ListViewModel.swift in Sources */,
+				73C828671FC273DF004DB9EF /* DictionaryExtension.swift in Sources */,
+				73C828821FC273DF004DB9EF /* TargetMusic.swift in Sources */,
+				7331A0981FC4204C00423F61 /* WeiboDetailCommentsCell.swift in Sources */,
+				73C828721FC273DF004DB9EF /* UIViewControllerExtension.swift in Sources */,
+				7331A09C1FC4206C00423F61 /* WeiboDetailLikesBinder.swift in Sources */,
+				7331A08D1FC4171300423F61 /* WeiboComment.swift in Sources */,
+				73C8289D1FC273DF004DB9EF /* HTTPAPIManager+Reactive.swift in Sources */,
+				73C8289B1FC273DF004DB9EF /* TargetProfile.swift in Sources */,
+				7331A0761FC402CA00423F61 /* UIBuilder.swift in Sources */,
+				73C828A01FC273DF004DB9EF /* UserAPIManager.swift in Sources */,
+				73C828811FC273DF004DB9EF /* MusicViewController.swift in Sources */,
+				73C828991FC273DF004DB9EF /* RegisterViewController.swift in Sources */,
+				7331A0921FC41F3400423F61 /* WeiboDetailBinder.swift in Sources */,
+				7331A0851FC4116100423F61 /* WeiboDetailLikesCellViewModel.swift in Sources */,
+				73C828891FC273DF004DB9EF /* Weibo.swift in Sources */,
+				73C828881FC273DF004DB9EF /* User.swift in Sources */,
+				73C828B21FC273DF004DB9EF /* ViewController.swift in Sources */,
+				73C8287B1FC273DF004DB9EF /* HTTPConfiguration.swift in Sources */,
+				73C828781FC273DF004DB9EF /* YYText+Reactive.swift in Sources */,
+				73C828BF1FC28381004DB9EF /* HHTableView.swift in Sources */,
+				73C828A31FC273DF004DB9EF /* Router+Music.swift in Sources */,
+				73C8287F1FC273DF004DB9EF /* ComposeViewController.swift in Sources */,
+				7331A0961FC4203000423F61 /* WeiboDetailRepostsCell.swift in Sources */,
+				73C828851FC273DF004DB9EF /* WeiboCellInfoBinder.swift in Sources */,
+				73C8288F1FC273DF004DB9EF /* WeiboCellInfoViewModel.swift in Sources */,
+				73C8286B1FC273DF004DB9EF /* PHAssetExtension.swift in Sources */,
+				73C828971FC273DF004DB9EF /* ProfileViewController.swift in Sources */,
+				7331A0831FC4114F00423F61 /* WeiboDetailRepostsCellViewModel.swift in Sources */,
+				73C8288D1FC273DF004DB9EF /* WeiboCellViewModel.swift in Sources */,
+				73C8289C1FC273DF004DB9EF /* TabBarController.swift in Sources */,
+				73C828931FC273DF004DB9EF /* TargetChat.swift in Sources */,
+				7325B2441FC6705600AA8210 /* UIView+ErrorView.swift in Sources */,
+				73C828A91FC273DF004DB9EF /* TargetWeb.swift in Sources */,
+				73C828871FC273DF004DB9EF /* WeiboListViewController.swift in Sources */,
+				73C828921FC273DF004DB9EF /* MessageListViewController.swift in Sources */,
+				7331A07C1FC410A400423F61 /* WeiboDetailViewModel.swift in Sources */,
+				73C828751FC273DF004DB9EF /* ListBinderProtocol.swift in Sources */,
+				73C828691FC273DF004DB9EF /* UserDefaultsExtension.swift in Sources */,
+				73C828681FC273DF004DB9EF /* StringExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		73C827E31FC273DF004DB9EF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C827E41FC273DF004DB9EF /* en */,
+				73C827E81FC273DF004DB9EF /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		73C8285D1FC273DF004DB9EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C8285E1FC273DF004DB9EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		73C8285F1FC273DF004DB9EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C828601FC273DF004DB9EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73C828621FC273DF004DB9EF /* LaunchScreen.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C828631FC273DF004DB9EF /* zh-Hans */,
+			);
+			name = LaunchScreen.strings;
+			sourceTree = "<group>";
+		};
+		73C828641FC273DF004DB9EF /* Main.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C828651FC273DF004DB9EF /* zh-Hans */,
+			);
+			name = Main.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73AB84081ED597C7006C3DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73AB84091ED597C7006C3DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73AB840B1ED597C7006C3DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB4FB0FA34B28EDAC8FA605 /* Pods-SwiftWeibo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4Z57X9SHG;
+				INFOPLIST_FILE = TSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaipai.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		73AB840C1ED597C7006C3DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB79B1AB1F5D6A5744604C2 /* Pods-SwiftWeibo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4Z57X9SHG;
+				INFOPLIST_FILE = TSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuaipai.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73AB83F31ED597C7006C3DD8 /* Build configuration list for PBXProject "TSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73AB84081ED597C7006C3DD8 /* Debug */,
+				73AB84091ED597C7006C3DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73AB840A1ED597C7006C3DD8 /* Build configuration list for PBXNativeTarget "TSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73AB840B1ED597C7006C3DD8 /* Debug */,
+				73AB840C1ED597C7006C3DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73AB83F01ED597C7006C3DD8 /* Project object */;
+}
