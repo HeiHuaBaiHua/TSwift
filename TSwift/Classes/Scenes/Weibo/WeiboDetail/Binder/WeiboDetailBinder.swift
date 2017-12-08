@@ -34,8 +34,47 @@ class WeiboDetailBinder: NSObject {
         super.init()
         
         bindListView()
+        bindLikeAction()
         bindSegmentView()
         bindScrollResponder()
+    }
+}
+
+extension WeiboDetailBinder {
+    
+    fileprivate func bindLikeAction() {
+        
+        let likeAction = AnyAPIAction {[unowned self] _ in
+            
+            let imageName = self.viewModel.isLiked.value ? "weibo_like" : "weibo_like_selected"
+            let likeIV = UIImageView(image: imageName.image)
+            likeIV.center = self.view.likeButton.imageView!.center
+            self.view.likeButton.addSubview(likeIV)
+            
+            let scaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
+            scaleAnimation.values = [1.0, 1.3, 1.8, 2.1]
+            scaleAnimation.keyTimes = [0, 0.3, 0.6, 1]
+            scaleAnimation.duration = 0.5
+            
+            likeIV.layer.add(scaleAnimation, forKey: nil)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+                likeIV.removeFromSuperview()
+            }
+            
+            return self.viewModel.likeProducer
+        }
+        
+        view.likeButton.reactive.isSelected <~ viewModel.isLiked
+        view.likeButton.reactive.pressed = ButtonAction(likeAction)
+        likeAction.events.observeResult {[unowned self] (event) in
+            guard let result = event.value else { return }
+            
+            if let error = result.error {
+                self.view.mainListView.toast(error.reason)
+            } else {
+                self.view.segmentView.reloadTitle()
+            }
+        }
     }
 }
 

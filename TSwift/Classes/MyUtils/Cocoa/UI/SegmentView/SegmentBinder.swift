@@ -28,6 +28,26 @@ class SegmentBinder: SegmentView {
 
 //MARK: Interface
 extension SegmentBinder: SegmentViewProtocol {
+    func reload() {
+        reloadTitle()
+        reloadView()
+    }
+    
+    func reloadView() {}
+    
+    func reloadTitle() {
+        
+        let count = itemCount()
+        for index in 0..<Int(count) {
+            
+            let titleButton = titleView.viewWithTag(InitialTag + index) as! UIButton
+            
+            let titleText = title(at: index)
+            titleButton.setAttributedTitle(NSAttributedString(string: titleText, attributes: attributesForTitle(at: index, selected: false)), for: .normal)
+            titleButton.setAttributedTitle(NSAttributedString(string: titleText, attributes: attributesForTitle(at: index, selected: true)), for: .selected)
+        }
+    }
+    
     
     var headerBackgroundColor: UIColor? {
         get {
@@ -164,7 +184,7 @@ extension SegmentBinder {
     fileprivate func attributesForTitle(at index: Int, selected: Bool) -> [String: Any] {
         guard let dataSource = self.dataSource,
             dataSource.responds(to: #selector(SegmentViewDataSource.segmentView(_:attributesForTitleAt:selected:))) else {
-                return [NSFontAttributeName : UIFont.systemFont(ofSize: 13),
+                return [NSFontAttributeName : UIFont.systemFont(ofSize: 15),
                         NSForegroundColorAttributeName: UIColor(hex: selected ? 0x252525 : 0x999999)]
         }
         

@@ -25,13 +25,13 @@ class WeiboCellInfoViewModel {
     let commentsCount = MutableProperty("")
     
     let isLiked = MutableProperty(false)
-    lazy var likeAction: AnyAPIAction = {
-        return AnyAPIAction(execute: {[unowned self] (_) -> AnyAPIProducer in
-            
-            self.switchLikesStatus()
-            return WeiboAPIManager().switchLikeStatusProducer(id: "").on(failed: { [unowned self] (_) in
-                self.switchLikesStatus()
-            })
+    lazy var likeProducer: AnyAPIProducer = {
+        
+        weak var weakSelf = self
+        return WeiboAPIManager().switchLikeStatusProducer(id: "").on(starting: {
+            weakSelf?.switchLikesStatus()
+        }, failed: { (_) in
+            weakSelf?.switchLikesStatus()
         })
     }()
 

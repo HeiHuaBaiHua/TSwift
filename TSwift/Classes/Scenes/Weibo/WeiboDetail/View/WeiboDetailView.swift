@@ -144,6 +144,11 @@ class WeiboDetailView: UIView {
 
     lazy private(set) var repostButton = WeiboDetailView.makeButton("转发", "weibo_forward")
     lazy private(set) var commentButton = WeiboDetailView.makeButton("评论", "weibo_comment")
-    lazy private(set) var likeButton = WeiboDetailView.makeButton("赞", "weibo_like")
+    lazy private(set) var likeButton: UIButton = {
+        
+        $0.setImage("weibo_like_selected".image, for: .selected)
+        $0.setTitleColor(UIColor(hex: 0xE00504), for: .selected)
+        return $0
+    }(WeiboDetailView.makeButton("赞", "weibo_like"))
 }
 

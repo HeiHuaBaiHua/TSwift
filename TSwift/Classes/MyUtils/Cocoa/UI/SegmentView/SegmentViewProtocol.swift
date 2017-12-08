@@ -22,6 +22,10 @@ import UIKit
 protocol SegmentViewProtocol {
     
     weak var dataSource: SegmentViewDataSource? { set get}
+    func reload()
+    func reloadView()
+    func reloadTitle()
+    
     var selectedIndex: Int{ set get }
     var headerBackgroundColor: UIColor? { set get}
     var didScrollToItemHandler: ((_ segmentView: UIView, _ index: Int) -> ())? { set get}

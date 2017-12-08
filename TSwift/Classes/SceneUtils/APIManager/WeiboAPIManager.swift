@@ -105,7 +105,7 @@ class WeiboAPIManager: HTTPAPIManager {
     func switchLikeStatusProducer(id: String) -> AnyAPIProducer {
         return AnyAPIProducer({ (observer, _) in
             
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.25, execute: {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
                 if arc4random() % 2 == 1 {
                     observer.send(error: APIError("操作失败~"))
                 } else {
